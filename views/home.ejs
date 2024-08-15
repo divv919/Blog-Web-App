@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div> <h1>Blog Web App</h1> </div>
+    <div>
+        <input type="button" onclick="location.href='post-new'" value="Create" />
+    </div>
+    <div>
+        <ul>
+            <% if(locals.title) { %>
+                <li><a href="blog-content"><%= title %></a>
+            <% } %>
+        </ul>
+    </div>
+</body>
+</html>
